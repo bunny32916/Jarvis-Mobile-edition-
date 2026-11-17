@@ -1,4 +1,3 @@
-// ===== 1. API KEY (Safe: browser లో మాతమ్ర ే) =====
 let API_KEY = localStorage.getItem('jarvis_key');
 if(!API_KEY){
 API_KEY = prompt('Enter your Gemini API Key:');
@@ -68,3 +67,4 @@ add('YOU: '+t,'user'); input.value=''; askGemini(t);
 };
 function add(t,w){const d=document.createElement('div');d.className='msg
 '+w;d.innerText=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
+
